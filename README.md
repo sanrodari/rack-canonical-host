@@ -15,7 +15,7 @@ the canonical host.
 Add this line to your application's `Gemfile`:
 
 ``` ruby
-gem 'rack-canonical-host', github: 'https://github.com/sanrodari/rack-canonical-host'
+gem 'rack-canonical-host', github: 'sanrodari/rack-canonical-host'
 ```
 
 And then execute:
