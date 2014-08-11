@@ -18,6 +18,7 @@ module Rack
         @env = env
         @host = host
         @force_ssl = options[:force_ssl]
+        @port = options[:port]
         @ignore = Array(options[:ignore])
         @if = Array(options[:if])
       end
@@ -60,6 +61,7 @@ module Rack
         request_uri.tap { |uri|
           uri.host = @host if @host
           uri.scheme = "https" if @force_ssl
+          uri.port = @port if @port
         }.to_s
       end
 
